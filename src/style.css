@@ -1,6 +1,83 @@
-h1 {
+body {
+  background-color: #272044;
+  font-family: "Jost", serif;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url(../images/Janelle_Monae_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 320px 0;
+}
+header h1 {
   font-family: "Bebas Neue", serif;
   font-weight: 400;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1;
+  margin: 10px 0;
+}
+header h2 {
+  font-family: "Jost", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-family: "Roboto", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  display: inline-block;
+  font-family: "Jost", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #d153af;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 120px 0;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  header a {
+    display: inline-block;
+    font-family: "Jost", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #d153af;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
 }

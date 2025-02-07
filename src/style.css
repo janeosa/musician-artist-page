@@ -66,7 +66,6 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  margin-right: 20px;
 }
 footer li {
   list-style: none;
@@ -93,6 +92,7 @@ section {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 @media (max-width: 960px) {
   header {

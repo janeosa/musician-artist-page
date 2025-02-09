@@ -151,7 +151,7 @@ section {
   margin: 0 auto;
 }
 .embed {
-  width: 100%;
+  width: 95%;
   aspect-ratio: 1/1;
 }
 .grid {
@@ -190,9 +190,13 @@ section {
 .text-center {
   text-align: center;
 }
+.video-embeds {
+  margin: 30px 0;
+}
 @media (max-width: 960px) {
   footer {
-    padding-bottom: 0;
+    padding: 10px 20px 0 20px;
+    text-align: center;
   }
   header {
     padding: 120px 0;
@@ -218,6 +222,12 @@ section {
     padding: 8px 16px;
     border-radius: 40px;
     margin-top: 20px;
+  }
+  .embed {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
   }
   main h2,
   main h3,

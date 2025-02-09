@@ -1,6 +1,7 @@
 body {
-  background-color: #000;
+  background-color: #272044;
   font-family: "Jost", serif;
+  margin: 0 auto;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
@@ -48,7 +49,6 @@ header a {
   border-radius: 40px;
   margin-top: 20px;
 }
-
 footer {
   color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
@@ -97,6 +97,20 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #000;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+  margin: 0;
+}
 main p {
   font-style: normal;
   font-weight: 400;
@@ -104,10 +118,34 @@ main p {
   line-height: 1.5;
 }
 section {
-  max-width: 1200px;
   margin: 0 auto;
+  padding: 40px 100px;
 }
 
+.btn {
+  display: block;
+  font-family: "Jost", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #d153af;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.card {
+  background: #fff;
+  margin: 30px 0;
+}
+.card p {
+  color: #000;
+}
+.card-body {
+  padding: 30px;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -120,17 +158,38 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.lyrics {
+  line-height: 1;
 }
 .main-image {
   max-width: 100%;
 }
 .section-two {
   background-color: #fff;
-  padding: 50px 0;
+}
+.section-three {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 40px;
+}
+.section-three-images {
+  max-width: 100%;
+  display: block;
+}
+.text-center {
+  text-align: center;
 }
 @media (max-width: 960px) {
+  footer {
+    padding-bottom: 0;
+  }
   header {
     padding: 120px 0;
   }
@@ -158,12 +217,14 @@ section {
   }
   main h2,
   main h3,
+  main h4,
+  main h5,
   main p {
     text-align: center;
     margin: 0 20px;
   }
   section {
-    padding: 30px;
+    padding: 40px 0;
   }
   .grid {
     grid-template-columns: 1fr;
@@ -175,5 +236,18 @@ section {
     max-height: 90%;
     display: block;
     margin: auto;
+  }
+  .btn {
+    display: block;
+    font-family: "Jost", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #d153af;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 40px;
+    margin-top: 20px;
   }
 }
